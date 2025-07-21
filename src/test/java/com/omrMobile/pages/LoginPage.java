@@ -20,6 +20,7 @@ public class LoginPage extends BaseClass{
 	
 	public void clickLogin() {
 		elementClick(findLocatorBy(btnLogin));
+		//testing pull req
 	}
 	
 	public String getErrorMessage() {
