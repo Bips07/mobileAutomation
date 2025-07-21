@@ -15,7 +15,7 @@ public class LoginPage extends BaseClass{
 		
 		elementSendKeys(findLocatorBy(txtEmail), userName);
 		elementSendKeys(findLocatorBy(txtPassword), password);
-		
+		//testing the pull request
 	}
 	
 	public void clickLogin() {
