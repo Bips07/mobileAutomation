@@ -15,6 +15,10 @@ public class LoginPage extends BaseClass{
 		
 		elementSendKeys(findLocatorBy(txtEmail), userName);
 		elementSendKeys(findLocatorBy(txtPassword), password);
+		
+	}
+	
+	public void clickLogin() {
 		elementClick(findLocatorBy(btnLogin));
 	}
 	

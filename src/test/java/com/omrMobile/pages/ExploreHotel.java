@@ -36,8 +36,7 @@ public class ExploreHotel extends BaseClass {
 	}
 	public void searchHotel() throws FileNotFoundException, IOException {
 		
-		waitForElement(textWelcome);
-		System.out.println(elementGetText(findLocatorBy(textWelcome)));
+		
 		elementClick(findLocatorBy(ddnState));
 		System.err.println(ddnStateSelect);
 		waitForElement(ddnStateSelect);
@@ -63,6 +62,11 @@ public class ExploreHotel extends BaseClass {
 		waitForElement(ddnNoOfAdultsSelect);
 		elementClick(findLocatorBy(ddnNoOfAdultsSelect));
 		elementClick(findLocatorBy(btnSearch));		
+	}
+	
+	public void getWelcomeText() {
+		waitForElement(textWelcome);
+		System.out.println(elementGetText(findLocatorBy(textWelcome)));
 	}
 
 }
